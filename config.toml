@@ -105,13 +105,13 @@ site_links_search_box = false
 [[extra.menu.main]]
 name = "Projects"
 section = "projects"
-url = "$BASE_URL/projects/"
+url = "/projects/"
 weight = 10
 
 [[extra.menu.main]]
 name = "Education"
 section = "education"
-url = "$BASE_URL/education/"
+url = "/education/"
 weight = 20
 
 
