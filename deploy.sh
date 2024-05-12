@@ -8,8 +8,11 @@ set -e
 # Build the site
 zola build
 
-# Remove old docs/ directory if it exists
-rm -rf docs/
+# Create docs/ directory if it doesn't exist
+mkdir -p docs/
+
+# Remove contents of docs/
+rm -rf docs/*
 
 # Copy the output to docs/
 cp -r public/* docs/
