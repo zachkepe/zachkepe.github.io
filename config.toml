@@ -79,6 +79,10 @@ enable = true
 # this image will be used as fallback if a page has no image of its own
 image = "doks.png"
 og_locale = "en_US"
+twitter_site = ""
+twitter_creator = ""
+facebook_author = ""
+facebook_publisher = ""
 
 ## JSON-LD
 [extra.schema]
