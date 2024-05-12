@@ -40,3 +40,7 @@ To deploy the website, run `deploy.sh` script. It will build the website and pus
 Make sure to run `chmod +x deploy.sh` to make the script executable.
 
 Additionally, you need to configure your GitHub Pages settings to deploy from the `master` branch and the `docs/` folder. For more information, refer to the [GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
