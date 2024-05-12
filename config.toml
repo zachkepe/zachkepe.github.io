@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://zachkepe.com"
+base_url = "https://zachkepe.com/"
 title = "Zachary Kepe"
 description = "Website for Zach"
 
@@ -105,13 +105,13 @@ site_links_search_box = false
 [[extra.menu.main]]
 name = "Projects"
 section = "projects"
-url = "/projects/"
+url = "$BASE_URL/projects/"
 weight = 10
 
 [[extra.menu.main]]
 name = "Education"
 section = "education"
-url = "/education/"
+url = "$BASE_URL/education/"
 weight = 20
 
 
