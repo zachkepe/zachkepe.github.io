@@ -72,21 +72,20 @@ timezone = "America/New_York"
 math = false
 library = "katex"  # options: "katex", "mathjax". default is "katex".
 
-## Open Graph + Twitter Cards
+# Open Graph + Twitter Cards
 [extra.open]
 enable = true
-# this image will be used as fallback if a page has no image of its own
-image = "./static/images/logo.png"
+image = "images/logo.png"  # Path to your logo file
 og_locale = "en_US"
 twitter_site = ""
 twitter_creator = ""
 facebook_author = ""
 facebook_publisher = ""
 
-## JSON-LD
+# JSON-LD
 [extra.schema]
 type = "Organization"
-logo = "./static/images/logo.png"  # Path to your logo file
+logo = "images/logo.png"  # Path to your logo file
 twitter = ""
 linked_in = ""
 github = "https://github.com/zachkepe"
