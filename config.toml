@@ -86,11 +86,11 @@ facebook_publisher = ""
 ## JSON-LD
 [extra.schema]
 type = "Organization"
-logo = "./static/images/logo.png"
+logo = "./static/images/logo.png"  # Path to your logo file
 twitter = ""
 linked_in = ""
 github = "https://github.com/zachkepe"
-section = "blog" # see config.extra.main~url
+section = "blog"
 ## Sitelinks Search Box
 site_links_search_box = false
 
@@ -115,4 +115,3 @@ pre = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0
 url = "https://github.com/zachkepe"
 post = "v0.1.0"
 weight = 20
-
