@@ -48,7 +48,6 @@ highlight_code = true
 author = "Zachary Kepe"
 github = "https://github.com/zachkepe"
 email = "zachkepe@gmail.com"
-
 # If running on netlify.app site, set to true
 is_netlify = false
 
@@ -77,7 +76,7 @@ library = "katex"  # options: "katex", "mathjax". default is "katex".
 [extra.open]
 enable = true
 # this image will be used as fallback if a page has no image of its own
-image = "doks.png"
+image = "./static/images/logo.png"
 og_locale = "en_US"
 twitter_site = ""
 twitter_creator = ""
@@ -87,7 +86,7 @@ facebook_publisher = ""
 ## JSON-LD
 [extra.schema]
 type = "Organization"
-logo = "logo-doks.png"
+logo = "./static/images/logo.png"
 twitter = ""
 linked_in = ""
 github = "https://github.com/zachkepe"
