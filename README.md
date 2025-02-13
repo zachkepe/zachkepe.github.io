@@ -1,6 +1,6 @@
 # zachkepe.github.io
 
-This is my personal website build with [Zola](https://www.getzola.org/) as a portfolio of my work and projects.
+This is my personal website built with [Zola](https://www.getzola.org/) as a portfolio of my work and projects.
 
 ## Getting Started
 

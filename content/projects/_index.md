@@ -1,8 +1,6 @@
 +++
 title = "Personal Projects"
 description = "Some of my personal projects."
-date = 2021-05-01T08:00:00+00:00
-updated = 2021-05-01T08:00:00+00:00
 draft = false
 weight = 10
 sort_by = "weight"
@@ -13,28 +11,34 @@ toc = true
 top = false
 +++
 
-### AutoNote
+### Vislang AI Lab
 
 <p style="text-align: center;">
-    <img src="/images/autonote.png" alt="AutoNote Image" style="width: 300px; height: auto;">
+    <img src="/images/vislang.jpg" alt="VisLang Research Project" style="width: 300px; height: auto;">
 </p>
 
-**AutoNote** is an innovative application that harnesses the power of AI tools to automatically generate comprehensive meeting and class notes from audio input. Designed with students in mind, AutoNote aims to enhance productivity and efficiency by eliminating the need for manual note-taking. By utilizing:
-
-- **TypeScript**
-- **OpenAI Whisper**
-
-AutoNote allows students to focus on the content of their lectures and discussions, while the application diligently captures and organizes the key points. With AutoNote, students can effortlessly review their notes at a later time, ensuring that no important information is missed and enabling them to maximize their learning potential.
+Currently conducting research in visual language understanding at Rice University, focusing on improving the accuracy and efficiency of vision-language models. This project explores novel approaches to multi-modal learning, investigating how AI systems can better understand and process both visual and textual information simultaneously. Working with state-of-the-art transformer architectures and contributing to advancements in cross-modal attention mechanisms.
 
 ### King Energy
 
 <p style="text-align: center;">
-    <img src="/images/king-energy.png" alt="King Energy Image" style="width: 300px; height: auto;">
+    <img src="/images/king-energy.png" alt="King Energy Project" style="width: 300px; height: auto;">
 </p>
 
-During my internship at **King Energy**, I had the opportunity to contribute to the development of a sophisticated file management and tagging system. The primary objective of this project was to streamline the process of file selection and tagging, ultimately reducing the time and effort required for manual file management. By leveraging:
+During my internship at King Energy, I contributed to the development of a sophisticated file management and tagging system. This project involved reengineering data pipelines and integrating Google APIs to streamline file retrieval and categorization, significantly reducing manual processing time and enhancing operational efficiency.
 
-- **TypeScript**
-- **Google API**
+### AutoNote
 
-We created a robust solution that significantly enhanced productivity and efficiency within the organization. The system's intelligent tagging capabilities and intuitive interface allowed users to quickly locate and categorize files, eliminating the need for tedious and time-consuming manual tasks.
+<p style="text-align: center;">
+    <img src="/images/autonote.png" alt="AutoNote Screenshot" style="width: 300px; height: auto;">
+</p>
+
+AutoNote is an innovative application that leverages advanced AI technologies to automatically generate comprehensive notes from audio inputs. Designed with students in mind, it utilizes TypeScript and OpenAI Whisper to capture and organize key points from lectures and meetings—allowing users to focus on understanding the material rather than on manual note-taking.
+
+### New York City Vehicular Crash Analysis
+
+<p style="text-align: center;">
+    <img src="/images/nyc-crash-analysis.jpg" alt="NYC Vehicular Crash Analysis" style="width: 300px; height: auto;">
+</p>
+
+This project involved analyzing over one million crash records from the NYC Open Data Portal to identify the top ten high-risk factors contributing to vehicular crashes. Utilizing R, SQL, Quarto, and LaTeX, I developed detailed visualizations and deployed a live Shiny web application that delivers data-driven insights and policy recommendations aimed at reducing crash frequency.

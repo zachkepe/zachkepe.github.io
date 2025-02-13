@@ -1,8 +1,6 @@
 +++
 title = "Zachary Kepe's Portfolio"
 
-# The homepage contents
 [extra]
-lead = "Welcome to my personal website! I am a Computer Science student at Rice University in Houston, TX. Here you will find my projects, resume, and blog posts. Feel free to explore or contact me if you have any questions or would like to collaborate."
-
+lead = "Welcome to my personal website! I am a dedicated Computer Science student at Rice University specializing in innovative research and software development. Here you will find detailed information about my projects, resume, and blog posts. Please feel free to explore and contact me for collaborations or inquiries."
 +++
