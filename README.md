@@ -1,46 +1,29 @@
-# zachkepe.github.io
+# Zachary Kepe's Portfolio
+Welcome to my personal portfolio website, hosted at [www.zachkepe.com](https://www.zachkepe.com). This site showcases my work as a Computer Science student at Rice University, featuring my projects, education, and professional background. Built with HTML, CSS, and JavaScript, it's deployed on GitHub Pages.
 
-This is my personal website built with [Zola](https://www.getzola.org/) as a portfolio of my work and projects.
+## Overview
+This is a single-page portfolio highlighting:
+- **Education**: My academic journey at Rice University, pursuing a B.S. in Computer Science with a minor in Data Science.
+- **Projects**: Key personal and professional projects, including AI research, software development, and data analysis.
+- **About**: A brief introduction to my skills and experience.
 
 ## Getting Started
+To run this site locally or use it as a template:
 
-To get a local copy up and running or would like to use this as a template for your own website, follow these steps:
-
-1. Clone the repository
-   ```bash
-   git clone https://github.com/zachkepe/zachkepe.github.io.git
-    ```
-
-2. Install Zola by following the instructions [here](https://www.getzola.org/documentation/getting-started/installation/) or using Homebrew on macOS:
-    ```bash
-    brew install zola
-    ```
-
-3. Change directory to the project folder
-    ```bash
-    cd zachkepe.github.io
-    ```
-
-4. Start the development server
-    ```bash
-    zola build
-    zola serve
-    ```
-    The website will be available on http://127.0.0.1:1111
-
-
-## Deployment
-
-To deploy the website, run `deploy.sh` script. It will build the website and push the changes to the `master` branch.
-
+1. **Clone the Repository**
 ```bash
-./deploy.sh
+git clone https://github.com/zachkepe/zachkepe.github.io.git
 ```
 
-Make sure to run `chmod +x deploy.sh` to make the script executable.
+2. **Navigate to the Project Directory**
+```bash
+cd zachkepe.github.io
+```
 
-Additionally, you need to configure your GitHub Pages settings to deploy from the `master` branch and the `docs/` folder. For more information, refer to the [GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+3. **Serve the Site Locally**
+Use a local server to view the site (no build step required):
+```bash
+python -m http.server 8000
+```
+Open your browser to http://localhost:8000.
+Alternatively, simply open index.html directly in a browser (note: some features like relative paths may not work without a server).
