@@ -60,14 +60,14 @@ h2 {
 }
 
 section {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem; /* Reduced from 4rem to 2rem */
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .hero {
     text-align: center;
-    padding: 4rem 0;
+    padding: 2rem 0; /* Reduced from 4rem to 2rem */
 }
 
 .hero h2 {
@@ -80,6 +80,16 @@ section {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.clickable-card {
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.clickable-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .section-image {
@@ -112,11 +122,12 @@ section {
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .project-card img {
@@ -132,13 +143,33 @@ section {
     margin-bottom: 0.5rem;
 }
 
+.project-card .view-link {
+    color: #3498db;
+    text-decoration: none;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.project-card .view-link:hover {
+    text-decoration: underline;
+}
+
 .author-content a {
     color: #3498db;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .author-content a:hover {
     text-decoration: underline;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
 }
 
 footer {
