@@ -32,14 +32,21 @@ header {
     margin: 0 auto;
     padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Keeps Zachary Kepe on left, nav-right on right */
     align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Space between nav links, separator, and social icons */
 }
 
 nav ul {
     list-style: none;
     display: flex;
     gap: 2rem;
+    margin: 0;
 }
 
 nav a {
@@ -55,6 +62,7 @@ nav a:hover {
 
 h1 {
     font-size: 1.5rem;
+    margin: 0;
 }
 
 h1 a {
@@ -174,6 +182,7 @@ section {
     text-decoration: underline;
 }
 
+/* Base social-icon size (for About section) */
 .social-icon {
     width: 20px;
     height: 20px;
@@ -187,19 +196,58 @@ footer {
     color: #fff;
 }
 
+/* Ensure social icons in nav stay consistent */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-container .nav-links .social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Navigation separator styling */
+.nav-separator {
+    height: 20px; /* Matches the height of social icons for alignment */
+    width: 1px; /* Thin line */
+    background-color: #2c3e50; /* Matches the text color of nav links */
+    margin: 0 1rem; /* Space on either side of the line */
+}
+
+/* Media query for smaller screens */
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
         gap: 1rem;
     }
     
-    nav ul {
+    .nav-right {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
     }
     
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
     .coursework-list {
         columns: 1;
+    }
+    
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .nav-container .nav-links .social-icon {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .nav-separator {
+        display: none; /* Remove separator on mobile for better layout */
     }
 }
