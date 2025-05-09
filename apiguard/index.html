@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline'; connect-src 'self' https://www.google-analytics.com https://analytics.google.com; img-src 'self' https://zachkepe.com https://cdn.jsdelivr.net https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; frame-ancestors 'self'; base-uri 'self'; form-action 'self';">
         <title>APIGuard - Security Testing Made Simple</title>
         <!-- Remove the CSP meta tag since it's causing issues -->
         <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -692,6 +693,20 @@
             
             return false; // Prevent default link behavior
         }
+        document.querySelector('form[action^="https://formspree.io"]').addEventListener('submit', function() {
+            gtag('event', 'form_submission', {
+                'event_category': 'engagement',
+                'event_label': 'early_access_signup'
+            });
+            });
+
+            // Track scan button clicks
+            document.getElementById('scan-btn').addEventListener('click', function() {
+            gtag('event', 'button_click', {
+                'event_category': 'engagement',
+                'event_label': 'scan_now'
+            });
+            });
     </script>
 
     <!-- Updated footer with more approachable design -->
