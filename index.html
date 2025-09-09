@@ -5,156 +5,324 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline'; connect-src 'self' https://www.google-analytics.com https://analytics.google.com; img-src 'self' https://zachkepe.com https://cdn.jsdelivr.net https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; frame-ancestors 'self'; base-uri 'self'; form-action 'self';">
         <meta name="referrer" content="strict-origin-when-cross-origin">
+        
         <!-- Core Meta Tags -->
-        <title>Zachary Kepe - Computer Science Portfolio</title>
-        <meta name="description" content="Portfolio of Zachary Kepe, a Computer Science student at Rice University specializing in machine learning, software development, and data analytics. Explore my projects and education.">
-        <meta name="keywords" content="Zachary Kepe, computer science portfolio, Rice University, machine learning, software development, data science, AI research, Browser FZF Search">
+        <title>Zachary Kepe - Full Stack Engineer Portfolio</title>
+        <meta name="description" content="Portfolio of Zachary Kepe, a Full Stack Engineer and Computer Science student at Rice University. Experience with fintech, machine learning, and security scanning platforms.">
+        <meta name="keywords" content="Zachary Kepe, full stack engineer, computer science, Rice University, Discover Financial Services, machine learning, cybersecurity, ClientShield">
         <meta name="author" content="Zachary Kepe">
         <meta name="robots" content="index, follow">
-        <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-        <meta property="og:title" content="Zachary Kepe - Computer Science Portfolio">
-        <meta property="og:description" content="Explore the projects and education of Zachary Kepe, a Computer Science student at Rice University focusing on AI and software development.">
+        
+        <!-- Open Graph -->
+        <meta property="og:title" content="Zachary Kepe - Full Stack Engineer Portfolio">
+        <meta property="og:description" content="Full Stack Engineer with experience in fintech and cybersecurity. Discover Financial Services intern, ClientShield creator.">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://zachkepe.com">
         <meta property="og:image" content="https://zachkepe.com/images/logo.png">
         <meta property="og:site_name" content="Zachary Kepe's Portfolio">
+        
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <!-- Canonical URL -->
         <link rel="canonical" href="https://zachkepe.com">
-        <!-- Styles -->
-        <link rel="stylesheet" href="styles.css">
-        <!-- Google tag (gtag.js) -->
+        <link rel="stylesheet" href="dist/styles.css">
+        
+        <!-- Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PBMPKWF28"></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-8PBMPKWF28');
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8PBMPKWF28');
         </script>
     </head>
-<body>
-    <header>
-        <nav>
-            <div class="nav-container">
-                <h1><a href="#home">Zachary Kepe</a></h1>
-                <div class="nav-right">
-                    <ul>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#authors">About</a></li>
-                    </ul>
-                    <span class="nav-separator"></span>
-                    <div class="nav-links">
-                        <a href="https://github.com/zachkepe" target="_blank">
-                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" class="social-icon">
+<body class="min-h-screen bg-background">
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div class="container mx-auto px-4">
+            <div class="flex h-16 items-center justify-between">
+                <a href="#home" class="flex items-center space-x-2">
+                    <span class="text-xl font-bold">Zachary Kepe</span>
+                </a>
+                
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="#experience" class="text-sm font-medium transition-colors hover:text-primary">Experience</a>
+                    <a href="#projects" class="text-sm font-medium transition-colors hover:text-primary">Projects</a>
+                    <a href="#education" class="text-sm font-medium transition-colors hover:text-primary">Education</a>
+                    <a href="#about" class="text-sm font-medium transition-colors hover:text-primary">About</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="https://github.com/zachkepe" target="_blank" class="button button-ghost p-2">
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/zacharykepe/" target="_blank" class="button button-ghost p-2">
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="py-24 px-4">
+            <div class="container mx-auto max-w-4xl text-center">
+                <h1 class="text-4xl font-bold tracking-tight sm:text-6xl mb-6">
+                    Full Stack Engineer
+                </h1>
+                <p class="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+                    Strong foundation in backend development and data engineering, experienced in fintech and energy sectors. 
+                    Proven ability to build scalable web applications and optimize data pipelines.
+                </p>
+                <div class="flex flex-wrap gap-2 justify-center mb-8">
+                    <span class="badge badge-secondary">TypeScript</span>
+                    <span class="badge badge-secondary">Python</span>
+                    <span class="badge badge-secondary">React</span>
+                    <span class="badge badge-secondary">Flask</span>
+                    <span class="badge badge-secondary">PostgreSQL</span>
+                    <span class="badge badge-secondary">AWS</span>
+                    <span class="badge badge-secondary">Docker</span>
+                    <span class="badge badge-secondary">Cybersecurity</span>
+                </div>
+                <a href="#experience" class="button button-primary">View My Work</a>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-16 px-4 bg-muted/50">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-3xl font-bold text-center mb-12">Experience</h2>
+                
+                <div class="space-y-8">
+                    <!-- Discover Financial Services -->
+                    <div class="card p-6">
+                        <div class="flex flex-col lg:flex-row gap-6">
+                            <div class="lg:w-32 flex-shrink-0">
+                                <img src="/images/dfs-logo.png" alt="Discover Financial Services" class="w-full h-auto rounded-lg border">
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold">Software Engineer Intern</h3>
+                                        <p class="text-primary font-medium">Discover Financial Services</p>
+                                    </div>
+                                    <span class="text-sm text-muted-foreground">Jun 2025 - Aug 2025</span>
+                                </div>
+                                <ul class="space-y-2 text-muted-foreground">
+                                    <li>• Developed a Full Stack Web Application with Flask and React, improving audit process efficiency through an automated WebUI instead of manual scripting</li>
+                                    <li>• Implemented a user-friendly UI to extend parser tooling to non-technical employees, improving tool accessibility and user engagement</li>
+                                    <li>• Pioneered the first OpenShift deployment for the team, establishing containerization pathway for legacy system modernization using Red Hat OpenShift Container Platform</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vislang AI Lab -->
+                    <div class="card p-6">
+                        <div class="flex flex-col lg:flex-row gap-6">
+                            <div class="lg:w-32 flex-shrink-0">
+                                <img src="/images/vislang.png" alt="Vislang AI Lab" class="w-full h-auto rounded-lg border">
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold">Machine Learning Researcher</h3>
+                                        <p class="text-primary font-medium">Vislang AI Lab at Rice University</p>
+                                    </div>
+                                    <span class="text-sm text-muted-foreground">May 2024 - Dec 2024</span>
+                                </div>
+                                <ul class="space-y-2 text-muted-foreground">
+                                    <li>• Contributed to the Organic Multimodal Corpus project, addressing the lack of diverse and comprehensive multimodal datasets in the research community</li>
+                                    <li>• Developed an automated data pipeline by implementing concurrent web crawlers to collect over 40 million free-use image-text pairs</li>
+                                    <li>• Managed large-scale data storage and ETL processes with SQLite and PostgreSQL, ensuring robust data integrity and accessibility for advanced ML experiments</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- King Energy -->
+                    <div class="card p-6">
+                        <div class="flex flex-col lg:flex-row gap-6">
+                            <div class="lg:w-32 flex-shrink-0">
+                                <img src="/images/king.png" alt="King Energy" class="w-full h-auto rounded-lg border">
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold">Software Developer Intern</h3>
+                                        <p class="text-primary font-medium">King Energy</p>
+                                    </div>
+                                    <span class="text-sm text-muted-foreground">Jun 2023 - Aug 2023</span>
+                                </div>
+                                <ul class="space-y-2 text-muted-foreground">
+                                    <li>• Developed and integrated a backend file explorer feature for the admin web app, streamlined document bundling and reduced retrieval time by 70%</li>
+                                    <li>• Reengineered the company's data pipeline and Google Drive structure using Google API and Salesforce API, cut manual file handling time by over 30 hours monthly</li>
+                                    <li>• Collaborated with a cross-functional team focused on mitigating environmental impact and promoting renewable energy solutions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 px-4">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- ClientShield -->
+                    <div class="card p-6 group hover:shadow-lg transition-shadow">
+                        <div class="mb-4">
+                            <img src="/images/clientshield-logo.png" alt="ClientShield Security Platform" class="w-full h-48 object-cover rounded-lg border">
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">ClientShield - Security Scanning Platform</h3>
+                                <span class="text-sm text-muted-foreground">Feb 2025 - Present</span>
+                            </div>
+                            <p class="text-muted-foreground text-sm">
+                                Comprehensive security scanning platform integrating 15+ security tools (Nuclei, OWASP ZAP, ESLint, SSL scanners) using Docker containerization and microservices architecture.
+                            </p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="badge badge-secondary">Docker</span>
+                                <span class="badge badge-secondary">Flask</span>
+                                <span class="badge badge-secondary">PostgreSQL</span>
+                                <span class="badge badge-secondary">Redis</span>
+                                <span class="badge badge-secondary">JWT</span>
+                            </div>
+                            <ul class="text-sm text-muted-foreground space-y-1">
+                                <li>• 3000+ security templates processed</li>
+                                <li>• 80% reduction in manual assessments</li>
+                                <li>• 10+ concurrent scans supported</li>
+                                <li>• 20+ hours saved monthly for agencies</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Browser FZF Search -->
+                    <div class="card p-6 group hover:shadow-lg transition-shadow">
+                        <div class="mb-4">
+                            <img src="/images/googlefzf-logo.png" alt="Browser FZF Search" class="w-full h-48 object-cover rounded-lg border">
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Browser FZF Search</h3>
+                                <span class="text-sm text-muted-foreground">Jan 2025 - Feb 2025</span>
+                            </div>
+                            <p class="text-muted-foreground text-sm">
+                                AI-powered Chrome extension enhancing web and PDF search capabilities using local machine learning with TensorFlow.js and pre-trained GloVe embeddings.
+                            </p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="badge badge-secondary">JavaScript</span>
+                                <span class="badge badge-secondary">TensorFlow.js</span>
+                                <span class="badge badge-secondary">Chrome Extension</span>
+                                <span class="badge badge-secondary">ML</span>
+                            </div>
+                            <a href="https://github.com/zachkepe/browser-fzf" target="_blank" class="button button-ghost text-sm">
+                                View on GitHub →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- NYC Crash Analysis -->
+                    <div class="card p-6 group hover:shadow-lg transition-shadow">
+                        <div class="mb-4">
+                            <img src="/images/nyc-crash-analysis.jpg" alt="NYC Vehicular Crash Analysis" class="w-full h-48 object-cover rounded-lg border">
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">NYC Vehicular Crash Analysis</h3>
+                                <span class="text-sm text-muted-foreground">Feb 2024 - Apr 2024</span>
+                            </div>
+                            <p class="text-muted-foreground text-sm">
+                                Analyzed 1M+ crash records from the NYC Open Data Portal, identified and visualized top 10 high-risk factors for vehicular crashes.
+                            </p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="badge badge-secondary">R</span>
+                                <span class="badge badge-secondary">Shiny</span>
+                                <span class="badge badge-secondary">Data Analysis</span>
+                                <span class="badge badge-secondary">Visualization</span>
+                            </div>
+                            <a href="https://github.com/micahkepe/stat405project" target="_blank" class="button button-ghost text-sm">
+                                View Project →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-16 px-4 bg-muted/50">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="text-3xl font-bold text-center mb-12">Education</h2>
+                
+                <div class="card p-6">
+                    <div class="flex flex-col lg:flex-row gap-6">
+                        <div class="lg:w-32 flex-shrink-0">
+                            <img src="/images/education.png" alt="Rice University" class="w-full h-auto rounded-lg border">
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-4">
+                                <div>
+                                    <h3 class="text-xl font-semibold">Bachelor of Science in Computer Science</h3>
+                                    <p class="text-primary font-medium">Rice University</p>
+                                    <p class="text-muted-foreground">Minor in Data Science</p>
+                                </div>
+                                <div class="text-right">
+                                    <span class="text-sm text-muted-foreground">Aug 2022 - Dec 2025</span>
+                                    <p class="text-sm font-medium">GPA: 3.87/4.0</p>
+                                </div>
+                            </div>
+                            <p class="text-muted-foreground mb-4">
+                                Rigorous foundation in both theoretical and practical aspects of computer science, with focus on machine learning, data science, and software engineering.
+                            </p>
+                            <a href="https://www.rice.edu/" target="_blank" class="button button-ghost text-sm">
+                                Visit Rice University →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 px-4">
+            <div class="container mx-auto max-w-4xl text-center">
+                <h2 class="text-3xl font-bold mb-8">About Me</h2>
+                <div class="card p-8">
+                    <p class="text-lg text-muted-foreground mb-6">
+                        Full Stack Engineer with a strong foundation in backend development and data engineering, experienced in fintech and energy sectors. 
+                        Eager to leverage expertise in TypeScript, Python, SQL, and cloud technologies to drive innovative solutions.
+                    </p>
+                    <p class="text-muted-foreground mb-8">
+                        Currently pursuing Computer Science at Rice University • Available for internships, full-time, and collaborations
+                    </p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://github.com/zachkepe" target="_blank" class="button button-primary">
+                            GitHub Profile
                         </a>
-                        <a href="https://www.linkedin.com/in/zacharykepe/" target="_blank">
-                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" class="social-icon">
+                        <a href="https://www.linkedin.com/in/zacharykepe/" target="_blank" class="button button-ghost">
+                            LinkedIn Profile
                         </a>
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home">
-            <div class="hero">
-                <h2>My Portfolio</h2>
-                <p>Welcome to my personal website! I am a dedicated Computer Science student at Rice University specializing in innovative research and software development. Here you will find detailed information about my projects, resume, and blog posts. Please feel free to explore and contact me for collaborations or inquiries.</p>
-            </div>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <div class="content-card clickable-card" data-url="https://www.rice.edu/">
-                <img src="/images/education.png" alt="Education Image" class="section-image">
-                <div class="education-content">
-                    <p><strong>Bachelor of Science in Computer Science</strong><br>
-                    Minor in Data Science<br>
-                    Rice University, Houston, TX (Expected May 2026)<br>
-                    GPA: 3.89/4.0</p>
-                    <p>My academic experience has provided a rigorous foundation in both theoretical and practical aspects of computer science.</p>
-                    <h3>Relevant Coursework</h3>
-                    <ul class="coursework-list">
-                        <li>Concurrent Program Design</li>
-                        <li>Reasoning About Algorithms</li>
-                        <li>Computational Thinking</li>
-                        <li>Algorithmic Thinking</li>
-                        <li>Fundamentals of Computer Engineering</li>
-                        <li>Intro to Program Design</li>
-                        <li>Introduction to Computer Systems</li>
-                        <li>Computer Ethics</li>
-                        <li>Practical Machine Learning for Real-World Applications</li>
-                        <li>R For Data Science</li>
-                        <li>Multivariable Calculus</li>
-                        <li>Linear Algebra</li>
-                        <li>Probability and Statistics</li>
-                    </ul>
-                    <!-- Added explicit reference link for Education -->
-                    <p><a href="https://www.rice.edu/" target="_blank" class="view-link">Visit Rice University</a></p>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>Personal Projects</h2>
-            <div class="project-grid">
-                <div class="project-card clickable-card" data-url="https://vislang.ai/">
-                    <img src="/images/vislang.png" alt="VisLang Research Project">
-                    <h3>Vislang AI Lab</h3>
-                    <p>Conducting research in visual language understanding at Rice University, focusing on improving vision-language models using state-of-the-art transformer architectures and cross-modal attention mechanisms.</p>
-                    <!-- Added explicit reference link for Vislang -->
-                    <a href="https://vislang.ai/" target="_blank" class="view-link">Visit VisLang AI Lab</a>
-                </div>
-                <div class="project-card clickable-card" data-url="https://www.kingenergy.com/">
-                    <img src="/images/king.png" alt="King Energy Project">
-                    <h3>King Energy</h3>
-                    <p>Developed a sophisticated file management system during my internship, integrating Google APIs to streamline file retrieval and enhance operational efficiency.</p>
-                    <!-- Added explicit reference link for King Energy -->
-                    <a href="https://www.kingenergy.com/" target="_blank" class="view-link">Visit King Energy</a>
-                </div>
-                <div class="project-card clickable-card" data-url="https://github.com/micahkepe/stat405project">
-                    <img src="/images/nyc-crash-analysis.jpg" alt="NYC Vehicular Crash Analysis">
-                    <h3>NYC Vehicular Crash Analysis</h3>
-                    <p>Analyzed over one million crash records using R, SQL, and Shiny to identify high-risk factors and provide data-driven policy recommendations.</p>
-                    <!-- Added explicit reference link for NYC Crash Analysis -->
-                    <a href="https://github.com/micahkepe/stat405project" target="_blank" class="view-link">View on GitHub</a>
-                </div>
-                <div class="project-card clickable-card" data-url="https://github.com/zachkepe/browser-fzf">
-                    <img src="/images/googlefzf-logo.png" alt="Browser FZF Search">
-                    <h3>Browser FZF Search</h3>
-                    <p>Developed an AI-powered Chrome extension for enhanced web and PDF search using local machine learning with TensorFlow.js. Features multi-mode search and efficient highlighting.</p>
-                    <!-- Already has an explicit link -->
-                    <a href="https://github.com/zachkepe/browser-fzf" target="_blank" class="view-link">View on GitHub</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="authors">
-            <h2>About Me</h2>
-            <div class="content-card">
-                <div class="author-content">
-                    <h3>Zachary Kepe</h3>
-                    <p>A motivated Computer Science student with extensive experience in machine learning research, software development, and data analytics.</p>
-                    <p>
-                        <a href="https://github.com/zachkepe" target="_blank">
-                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" class="social-icon"> GitHub
-                        </a> | 
-                        <a href="https://www.linkedin.com/in/zacharykepe/" target="_blank">
-                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" class="social-icon"> LinkedIn
-                        </a>
-                    </p>
-                </div>
-            </div>
         </section>
     </main>
+
     <!-- Footer -->
-    <footer>
-        <p>© 2025 Zachary Kepe. All rights reserved.</p>
+    <footer class="border-t py-8 px-4">
+        <div class="container mx-auto text-center">
+            <p class="text-muted-foreground">© 2025 Zachary Kepe. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script src="scripts.js" integrity="sha256-KsRl9DFljDrgNE6ZOn3qcjpsnK81dcVnG9mSCnZWcXI=" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

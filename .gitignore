@@ -1,2 +1,6 @@
 # Zola-created files
 public/
+.mcp.json
+*.pdf
+task.md
+node_modules/
